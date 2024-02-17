@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+
+<head>
+    <title>
+        My First Web Page
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles2.css">
+
+
+
+</head>
+
+<body>
+    <div id="navbar">
+        <img id="logo" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/68b4fc80564407.5ce4e530173fd.png"
+            alt="logo" height="80" width="180">
+    </div>
+    <img id="banner" src="banner.jpg" alt="banner" height="250">
+    <h1>
+        About Terra
+    </h1>
+
+
+
+    <div id="about">
+        <div id="description">
+            <p style="margin-top: 0;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et
+                dolore
+                magna aliqua. <b>euismod</b> quis viverra nibh cras pulvinar mattis nunc sed. Felis eget velit aliquet
+                sagittis
+                id consectetur purus ut. Quis eleifend quam adipiscing vitae. Integer eget aliquet nibh praesent
+                tristique. </p>
+            <p>
+                We also offer 2 industry-focused bootcamps:
+            <ol>
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank">
+                        Full Stack developer Bootcamp
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank">
+                        Data Science Bootcamp
+                    </a>
+
+                </li>
+            </ol>
+            </p>
+        </div>
+
+        <div id="team">
+            <img id="team-image" src="work.jpg" alt="work">
+
+        </div>
+    </div>
+
+    <h2> Job Opportunities</h2>
+
+    <div id="jobs">
+        <table id="jobs-table">
+            <tr class="jobs-header-row">
+                <th rowspan="2"> Job Title </th>
+                <th colspan="2"> Location </th>
+                <th rowspan="2  "> Salary </th>
+                <th rowspan="2"> Posted On</th>
+            </tr>
+            <tr class="jobs-header-row">
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+            <tr class="jobs-data-row">
+                <td> Fronted Developer </td>
+                <td> istanbul</td>
+                <td> Turkey</td>
+                <td>5400$</td>
+                <td> Mar 3, 2023</td>
+            </tr>
+
+            <tr class="jobs-data-row">
+                <td> Full Stack Developer </td>
+                <td> Ankara</td>
+                <td> Turkey</td>
+                <td>2300$ </td>
+                <td> Feb 1, 2024</td>
+            </tr>
+
+            <tr class="jobs-data-row">
+                <td> Data Scientist</td>
+                <td colspan="2"> Remote</td>
+
+                <td> 1500$</td>
+                <td>Dec 22, 2023</td>
+            </tr>
+
+            <tr class="jobs-data-row">
+                <td> Machine Learning Engineer</td>
+                <td> California</td>
+                <td> USA</td>
+                <td> 2589$</td>
+                <td> Sep 19, 2024 </td>
+            </tr>
+
+        </table>
+
+        <div id="application">
+            <h2> Submit Your application</h2>
+            <!-- comment-->
+
+            <form id="application-form" action="https://formbold.com/s/6lqen" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name"> Full Name</label><br>
+                    <input type="text" id="name" name="Full Name" required placeholder="Stefan Zweig">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="E-mail adress" required placeholder="stefansweig@mail.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">phone</label><br>
+                    <input type="phone" id="phone" required placeholder="+90 511 111 11 11">
+                </div>
+
+                <div class="form-group">
+                    <label for="dob" id="dob" name="dob">Date of Birth</label><br>
+                    <input type="date" id="dob" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="position"> Position Applied For</label><br>
+                    <select name="Position Applied" id="position" required>
+                        <option value="">--Select Position--</option>
+                        <option value="fronted">Fronted Developer</option>
+                        <option value="fullstack">Full Stack Developer</option>
+                        <option value="datascientist"> Data Scientist</option>
+                        <option value="mlengineer">Machine Learning Engineer</option>
+                        <!-- sending to server value , server see that value-->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="resume">Upload Resume</label><br>
+                    <input type="file" name="resume" id="resume" accept=".pdf, .doc, docx," required>
+                </div>
+
+                <div class="form-group">
+                    <label for="coverletter">Cover Letter</label><br>
+                    <textarea name="coverletter" id="coverletter" cols="60" rows="10"
+                        placeholder="Explain what makes you suitable for the this job"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        I agree to the terms and conditions
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Submit Application">
+                </div>
+
+            </form>
+        </div>
+
+
+    </div>
+    <div id="footer">
+        <ul id="footer-list">
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    Courses
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    Programs
+                </a>
+
+            </li>
+            <li>
+                <a href="https://www.youtube.com" target="_blank">
+                    YouTube
+                </a>
+            </li>
+
+        </ul>
+        <span class="copyright">© 2024, Terra </span>
+    </div>
+
+
+
+</body>
+
+
+</html>
